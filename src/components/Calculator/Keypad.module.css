@@ -22,11 +22,11 @@
 .equal {
     background-color: orange;
     color: white;
-    grid-row: span 2; /* Если хотите высокую кнопку */
+    grid-row: span 2;
 }
 
 .zero {
-    grid-column: span 4; /* Растянуть на всю ширину (для 4 колонок) */
+    grid-column: span 4;
 }
 
 .clear, .backspace {

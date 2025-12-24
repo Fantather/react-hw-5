@@ -1,11 +1,47 @@
-.calculator{
-
-}
-
-.display{
-
-}
-
-.operand{
+/* Основной контейнер ("Корпус" калькулятора) */
+.calculator {
+    width: 320px; /* Фиксированная ширина — это соберет кнопки в кучу */
+    margin: 60px auto; /* Центрируем по центру страницы */
     
+    background-color: #ffffff;
+    border-radius: 20px; /* Сильные скругления углов */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2); /* Красивая, мягкая тень */
+    overflow: hidden; /* Чтобы дочерние элементы не вылезали за скругления */
+    font-family: 'Segoe UI', sans-serif; /* Приятный шрифт */
+}
+
+/* Экран калькулятора */
+.display {
+    background-color: #222; /* Темно-серый фон экрана */
+    color: white; /* Белые цифры */
+    
+    height: 120px; /* Фиксированная высота */
+    padding: 20px; /* Отступы внутри экрана */
+    
+    /* Магия Flexbox для выравнивания */
+    display: flex;
+    justify-content: flex-end; /* Прижать всё вправо */
+    align-items: flex-end; /* Прижать к низу экрана (как в iPhone) */
+    
+    font-size: 3rem; /* Крупный размер шрифта */
+    font-weight: 300; /* Тонкий шрифт выглядит стильнее */
+    line-height: 1;
+    
+    /* Если число длинное, оно не должно ломать верстку */
+    overflow-x: auto; 
+    white-space: nowrap;
+}
+
+/* Отдельные элементы внутри дисплея (число, оператор, число) */
+.operand {
+    margin-left: 6px; /* Небольшой зазор между оператором и числами */
+}
+
+/* (Опционально) Скроллбар для длинных чисел, чтобы он был тонким */
+.display::-webkit-scrollbar {
+    height: 6px;
+}
+.display::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 3px;
 }

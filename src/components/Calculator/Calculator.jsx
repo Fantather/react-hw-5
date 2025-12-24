@@ -13,31 +13,26 @@ import Keypad from "./Keypad";
 export const CalculatorContext = createContext();
 
 const BUTTONS_CONFIG = [
-    // 1-й ряд: Очистка и верхние операции
     { label: 'C', type: 'clear', styleKey: 'clear' },
     { label: '<-', type: 'backspace', styleKey: 'backspace' },
     { label: '/', type: 'operator', styleKey: 'operator' },
     { label: '*', type: 'operator', styleKey: 'operator' },
 
-    // 2-й ряд: Цифры 7-8-9 и Минус
     { label: '7', type: 'digit' },
     { label: '8', type: 'digit' },
     { label: '9', type: 'digit' },
     { label: '-', type: 'operator', styleKey: 'operator' },
 
-    // 3-й ряд: Цифры 4-5-6 и Плюс
     { label: '4', type: 'digit' },
     { label: '5', type: 'digit' },
     { label: '6', type: 'digit' },
     { label: '+', type: 'operator', styleKey: 'operator' },
 
-    // 4-й ряд: Цифры 1-2-3 и Равно (которое может быть высоким)
     { label: '1', type: 'digit' },
     { label: '2', type: 'digit' },
     { label: '3', type: 'digit' },
     { label: '=', type: 'execute', styleKey: 'equal' },
 
-    // 5-й ряд: Ноль (обычно широкий)
     { label: '0', type: 'digit', styleKey: 'zero' }, 
 ];
 
