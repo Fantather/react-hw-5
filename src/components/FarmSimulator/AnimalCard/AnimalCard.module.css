@@ -1,0 +1,53 @@
+.card{
+    display: flex;
+
+    gap: 15px;
+    padding: 10px;
+
+    width: fit-content;
+    height: fit-content;
+    
+
+    border: 1px solid black;
+}
+
+.icon{
+    width: 200px;
+    height: auto;
+}
+
+.mainInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.header{
+    display: flex;
+    gap: 10px;
+}
+
+.title{
+    margin: 0;
+}
+
+.meta{
+    
+}
+
+.hungerContainer{
+    
+}
+
+.hungerValue{
+    
+}
+
+.progressBar{
+    
+}
+
+.buttonContainer{
+    
+}

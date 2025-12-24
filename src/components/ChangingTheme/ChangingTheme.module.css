@@ -1,0 +1,29 @@
+.root{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.background{
+    width: 70px;
+    height: 70px;
+
+    border: 1px solid black;
+}
+
+.root button{
+    width: fit-content;
+}
+
+
+.light{
+    background-color: white;
+}
+
+.dark{
+    background-color: black;
+}
+
+.blue{
+    background-color: blue;
+}
